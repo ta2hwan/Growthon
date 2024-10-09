@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8"/>
+    <title>챗봇</title>
+    <script defer type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/annyong.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul style="font-size: 15px">
+        <li>
+          <a href="index.html">
+            <img src="./img/menu-new.png" style="width: 30px; height: 30px; margin: 0"/>
+          </a>
+          <a href="index.html">
+            <span>코무룩</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <aside class="side-bar">
+      <img src="./img/menu.png" id="memu2" style="width: 40px; height: 30px; margin-top: 15px; margin-left: 145px;"/>
+      <ul>
+        <li class="keyword">
+          <div class="section2">개발</div>
+        </li>
+        <li class="keyword">
+          <div class="section2">여행</div>
+        </li>
+        <li class="keyword">
+          <div class="section2">문화</div>
+        </li>
+        <li class="keyword">
+          <div class="section2">식사</div>
+        </li>
+        <li class="keyword">
+          <div class="section2">공모전</div>
+        </li>
+        <li class="keyword">
+          <div class="section2">상담</div>
+        </li>
+        <li class="keyword">
+          <div class="section2">취업</div>
+        </li>
+      </ul>
+    </aside>
+    <aside class="side-bar2">
+      <img src="./img/menu2.png" id="memu3" style="width: 30px; height: 30px; margin-top: 10px; margin-left: 20px;"/>
+      <div class="chat-box2">
+        <input id="addPrompt" type="text" placeholder="혜택 추가" class="benefit-text">
+      </div>
+      <div class="button-container"> 
+        <button id="add-button">추가</button>
+    </div>
+    </aside>
+    <div id="main-content">
+      <div id="main-page">
+        <div id="main-text">
+          <img id="title-image" src="./img/annyong.png" />
+          <h3 id="title">인하대학교 혜택을 질문해 보세요</h3>
+        </div>
+        <div id="title-sections">
+          <div class="wrapper">
+            <div class="section">
+              <div class="section-title">어떤 혜택들이 있어?</div>
+            </div>
+            <div class="section">
+              <div class="section-title">컴퓨터 공학과 관련 혜택 알려줘!</div>
+            </div>
+            <div class="section">
+              <div class="section-title">여행 관련된 혜택 알려줘!</div>
+            </div>
+            <div class="section">
+              <div class="section-title">혜택 추천해 줄래?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="chat-wrapper">
+        <div id="chat-container">
+        </div>
+      </div>
+    </div>
+    <form name="text_input">
+      <div id="chat-box">
+        <input id="prompt" type="text" placeholder="알고 싶은 혜택을 입력해주세요" class="chat-text" />
+        <div class="button">
+          <button id="prompt-button"><img src="./img/button.png" /></button>
+        </div>
+      </div>
+      <div id="info-message">
+        INHA GDSC Grothon 2024
+      </div>
+    </form>
+  </body>
+</html>
